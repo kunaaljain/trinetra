@@ -37,7 +37,8 @@
 
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
     .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,30,0.06)}
-    .product-image{height:160px;border-radius:8px;background:#eef2f7;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .product-image{height:160px;border-radius:8px;background:#eef2f7;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600;overflow:hidden}
+    .product-image img{width:100%;height:100%;object-fit:cover;display:block}
     .muted{color:var(--muted)}
 
     section{margin-top:28px}
@@ -83,24 +84,12 @@
             <a href="#products" style="padding:10px 14px;border-radius:8px;border:1px solid #e6e9ef">Our Products</a>
           </div>
 
-          <!-- <div class="grid" style="margin-top:20px">
-            <div class="card">
-              <div class="product-image">Product Image</div>
-              <h3 style="margin:12px 0 6px">Product Name 1</h3>
-              <div class="muted">Brief spec or grade • Packaging options</div>
-            </div>
-            <div class="card">
-              <div class="product-image">Product Image</div>
-              <h3 style="margin:12px 0 6px">Product Name 2</h3>
-              <div class="muted">Brief spec or grade • Packaging options</div>
-            </div>
-          </div> -->
         </div>
 
         <aside class="card">
           <h3>Contact</h3>
           <p class="muted" style="margin:8px 0">Get a fast quote or inquire about bulk supply.</p>
-          <p style="margin:6px 0"><strong>Phone:</strong> <a href="tel:+919784797999">+919784797999</a></p>
+          <p style="margin:6px 0"><strong>Phone:</strong> <a href="tel:+919784797999">+91 97847 97999</a></p>
           <p style="margin:6px 0"><strong>Email:</strong> <a href="mailto:sudarshan@trinetraminesandminerals.com">sudarshan@trinetraminesandminerals.com</a></p>
 
           <div style="margin-top:12px">
@@ -112,70 +101,69 @@
       <section id="products">
         <h2>Products</h2>
         <div class="grid">
-          <!-- Duplicate / edit cards below to add real products -->
+          <!-- Product cards with public images -->
           <div class="card">
-            <div class="product-image">Image</div>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Calcite-203446.jpg" alt="Calcite / Calcium Carbonate" loading="lazy"></div>
             <h3 style="margin:12px 0 6px">Calcite / Calcium Carbonate</h3>
-            <p class="muted">Natural/Coated/Precipitated</p>
+            <p class="muted">Natural / Coated / Precipitated</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Dolomite-24011.jpg" alt="Dolomite" loading="lazy"></div>
             <h3 style="margin:12px 0 6px">Dolomite</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
-            <h3 style="margin:12px 0 6px">Calcined Clay/Calcined Kaolin</h3>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Kaolinite-44637.jpg" alt="Calcined Clay / Kaolin" loading="lazy"></div>
+            <h3 style="margin:12px 0 6px">Calcined Clay / Calcined Kaolin</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Bentonite.jpg" alt="Hydrous Clay / Bentonite" loading="lazy"></div>
             <h3 style="margin:12px 0 6px">Hydrous Clay</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
-            <h3 style="margin:12px 0 6px">Barytes(Natural Barium Sulphate)</h3>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Baryte-18371.jpg" alt="Barytes (Barium Sulphate)" loading="lazy"></div>
+            <h3 style="margin:12px 0 6px">Barytes (Natural Barium Sulphate)</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Talc-10344.jpg" alt="Talcum / Steatite" loading="lazy"></div>
             <h3 style="margin:12px 0 6px">Talcum / Steatite</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
-            <h3 style="margin:12px 0 6px">Sand/Grains/ Aggregates – Dolomite, Calcite,
-Marble & Silica for Textures</h3>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sand_samples.jpg" alt="Sand / Aggregates" loading="lazy"></div>
+            <h3 style="margin:12px 0 6px">Sand / Grains / Aggregates</h3>
+            <p class="muted">Dolomite, Calcite, Marble & Silica for textures • Packing: bags</p>
+          </div>
+
+          <div class="card">
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Quartz-20399.jpg" alt="Quartz / Silica" loading="lazy"></div>
+            <h3 style="margin:12px 0 6px">Quartz / Silica</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
-            <h3 style="margin:12px 0 6px">Quartz/Silica</h3>
-            <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
-          </div>
-
-          <div class="card">
-            <div class="product-image">Image</div>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Muscovite-23811.jpg" alt="Mica" loading="lazy"></div>
             <h3 style="margin:12px 0 6px">Mica</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
-            <h3 style="margin:12px 0 6px">Quick/Hydrated lime</h3>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Lime_CaO.jpg" alt="Quick / Hydrated Lime" loading="lazy"></div>
+            <h3 style="margin:12px 0 6px">Quick / Hydrated Lime</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
 
           <div class="card">
-            <div class="product-image">Image</div>
+            <div class="product-image"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Diatomaceous_earth.jpg" alt="Bentonite & Siliceous Earth" loading="lazy"></div>
             <h3 style="margin:12px 0 6px">Bentonite & Siliceous Earth</h3>
             <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
           </div>
@@ -211,18 +199,19 @@ promoters.</p>
         <h2>Enquire / Request Quote</h2>
         <div class="grid">
           <div class="card">
-            <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <!-- Using formsubmit.co AJAX endpoint so the site can send emails without a backend -->
+            <form id="contactForm">
               <div class="form-row">
                 <label>Name</label>
-                <input type="text" id="name" required>
+                <input type="text" name="name" id="name" required>
               </div>
               <div class="form-row">
                 <label>Email</label>
-                <input type="email" id="email" required>
+                <input type="email" name="email" id="email" required>
               </div>
               <div class="form-row">
                 <label>Message</label>
-                <textarea id="message" rows="5" required></textarea>
+                <textarea name="message" id="message" rows="5" required></textarea>
               </div>
               <div style="margin-top:12px;display:flex;gap:8px">
                 <button type="submit">Send Message</button>
@@ -230,6 +219,8 @@ promoters.</p>
               </div>
               <p id="status" class="muted" style="margin-top:10px;font-size:13px"></p>
             </form>
+
+            <p class="muted" style="margin-top:12px">Notes: First time you use this formsubmit address you may receive a confirmation email to verify the sender — follow that email to activate messages.</p>
           </div>
 
           <div class="card">
@@ -252,26 +243,44 @@ promoters.</p>
   </div>
 
   <script>
-    // small client-side handlers (no backend). Replace with real endpoints if you have them.
+    // small client-side handlers (no backend). Replaced mailto with AJAX POST to formsubmit.co
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    function handleSubmit(e){
+    async function handleSubmit(e){
       e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
       const status = document.getElementById('status');
+      status.textContent = '';
 
-      if(!name || !email || !message){ status.textContent = 'Please complete all fields.'; return false }
+      const form = document.getElementById('contactForm');
+      const formData = new FormData(form);
 
-      // Default behaviour: open user's mail client with prefilled values.
-      const subject = encodeURIComponent('Website enquiry from ' + name);
-      const body = encodeURIComponent(message + '\n\nContact email: ' + email);
-      window.location.href = 'mailto:sudarshan@trinetraminesandminerals.com?subject=' + subject + '&body=' + body;
-      status.textContent = 'Opening mail client...';
-      return false;
+      // Validate quickly
+      if(!formData.get('name') || !formData.get('email') || !formData.get('message')){
+        status.textContent = 'Please complete all fields.';
+        return;
+      }
+
+      try{
+        status.textContent = 'Sending...';
+        // formsubmit.co AJAX endpoint: https://formsubmit.co/ajax/<email-address>
+        const endpoint = 'https://formsubmit.co/ajax/sudarshan@trinetraminesandminerals.com';
+        const resp = await fetch(endpoint, { method: 'POST', body: formData });
+        const data = await resp.json();
+        if(resp.ok){
+          status.textContent = 'Message sent — we will get back to you soon.';
+          form.reset();
+        } else {
+          status.textContent = data.message || 'There was an error sending your message.';
+        }
+      }catch(err){
+        console.error(err);
+        status.textContent = 'Could not send message. Please try emailing directly to sudarshan@trinetraminesandminerals.com';
+      }
     }
+
     function clearForm(){ document.getElementById('contactForm').reset(); document.getElementById('status').textContent = '' }
+
+    document.getElementById('contactForm').addEventListener('submit', handleSubmit);
   </script>
 </body>
 </html>
