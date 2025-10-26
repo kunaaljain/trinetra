@@ -1,0 +1,215 @@
+<!--
+  Minimal single-file static website for trinetraminesandminerals.com
+  - Drop this file as `index.html` in the root of a static site (Cloudflare Pages, Netlify, GitHub Pages).
+  - Replace placeholders (logo, phone, email, products, images) with your real content.
+  - To deploy on Cloudflare Pages: create a Git repo, add this file to repo root, push, then create a Pages project and connect the repo. No build command needed for a single HTML file.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trinetra Mines & Minerals</title>
+  <meta name="description" content="Trinetra Mines & Minerals — high-quality minerals and mining products.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- replace with actual favicon -->
+  <style>
+    /* Minimal modern CSS — responsive, no external deps */
+    :root{--accent:#0f172a;--muted:#667085;--card:#ffffff;--bg:#f8fafc}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#0b1220;background:var(--bg);line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,#0ea5a4,#0369a1);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    .cta{background:#0b1220;color:white;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:40px 0}
+    .hero-inner{background:linear-gradient(180deg,rgba(11,18,32,0.04),transparent);padding:28px;border-radius:12px}
+    .eyebrow{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+    h1{margin:10px 0 8px;font-size:28px}
+    p.lead{margin:0;color:var(--muted)}
+    .actions{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,30,0.06)}
+    .product-image{height:160px;border-radius:8px;background:#eef2f7;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .muted{color:var(--muted)}
+
+    section{margin-top:28px}
+    footer{margin-top:38px;padding:28px 0;color:var(--muted);font-size:14px}
+
+    /* contact form */
+    .form-row{display:flex;flex-direction:column;gap:8px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:white}
+    button{background:#0b1220;color:white;padding:10px 14px;border-radius:8px;border:0;cursor:pointer}
+
+    @media(min-width:860px){
+      .hero{grid-template-columns:1fr 420px}
+      h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">TM</div>
+        <div>
+          <div style="font-weight:700">Trinetra Mines & Minerals</div>
+          <div class="muted" style="font-size:13px">Quality minerals • Reliable supply</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="eyebrow">Supplier • Exporter • Manufacturer</div>
+          <h1>Mining & Mineral Solutions — Trusted Partner</h1>
+          <p class="lead">We supply high-quality minerals and raw materials for industrial and manufacturing uses. Sourcing responsibly with consistent quality and on-time delivery.</p>
+
+          <div class="actions">
+            <a href="#contact" class="cta">Request Quote</a>
+            <a href="#products" style="padding:10px 14px;border-radius:8px;border:1px solid #e6e9ef">Our Products</a>
+          </div>
+
+          <div class="grid" style="margin-top:20px">
+            <div class="card">
+              <div class="product-image">Product Image</div>
+              <h3 style="margin:12px 0 6px">Product Name 1</h3>
+              <div class="muted">Brief spec or grade • Packaging options</div>
+            </div>
+            <div class="card">
+              <div class="product-image">Product Image</div>
+              <h3 style="margin:12px 0 6px">Product Name 2</h3>
+              <div class="muted">Brief spec or grade • Packaging options</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3>Contact</h3>
+          <p class="muted" style="margin:8px 0">Get a fast quote or inquire about bulk supply.</p>
+          <p style="margin:6px 0"><strong>Phone:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+          <p style="margin:6px 0"><strong>Email:</strong> <a href="mailto:info@trinetraminesandminerals.com">info@trinetraminesandminerals.com</a></p>
+
+          <div style="margin-top:12px">
+            <small class="muted">Office hours: Mon–Sat • 9:30am–6:00pm</small>
+          </div>
+        </aside>
+      </section>
+
+      <section id="products">
+        <h2>Products</h2>
+        <div class="grid">
+          <!-- Duplicate / edit cards below to add real products -->
+          <div class="card">
+            <div class="product-image">Image</div>
+            <h3 style="margin:12px 0 6px">Iron Ore / Hematite</h3>
+            <p class="muted">Grade: Fe 60% • Available in lumps and fines • 25MT/20ft container</p>
+          </div>
+
+          <div class="card">
+            <div class="product-image">Image</div>
+            <h3 style="margin:12px 0 6px">Mica / Sheet Mica</h3>
+            <p class="muted">Grades and particle sizes available on request • Packing: bags</p>
+          </div>
+
+          <div class="card">
+            <div class="product-image">Image</div>
+            <h3 style="margin:12px 0 6px">Other Mineral</h3>
+            <p class="muted">Short description, typical uses, and availability</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <div class="card" style="padding:18px">
+          <p class="muted">Trinetra Mines & Minerals is a family-run supplier focused on consistent quality, ethical sourcing, and logistics for domestic and export customers. We handle procurement, quality testing, packing and shipping — making the supply chain simple for our clients.</p>
+          <ul class="muted" style="margin-top:12px">
+            <li>Quality testing and sample reports available</li>
+            <li>Packaging: bulk / bags / containerized</li>
+            <li>Export documentation and logistics support</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Enquire / Request Quote</h2>
+        <div class="grid">
+          <div class="card">
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+              <div class="form-row">
+                <label>Name</label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="form-row">
+                <label>Email</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="form-row">
+                <label>Message</label>
+                <textarea id="message" rows="5" required></textarea>
+              </div>
+              <div style="margin-top:12px;display:flex;gap:8px">
+                <button type="submit">Send Message</button>
+                <button type="button" onclick="clearForm()" style="background:#e6eef9;color:#0b1220">Clear</button>
+              </div>
+              <p id="status" class="muted" style="margin-top:10px;font-size:13px"></p>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Visit / Mail</h3>
+            <p class="muted">Address line 1<br>City, State — PIN</p>
+            <h3 style="margin-top:12px">Other Contacts</h3>
+            <p class="muted">Sales: <a href="mailto:sales@trinetraminesandminerals.com">sales@trinetraminesandminerals.com</a></p>
+            <p class="muted">Export: <a href="mailto:exports@trinetraminesandminerals.com">exports@trinetraminesandminerals.com</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>&copy; <span id="year"></span> Trinetra Mines & Minerals</div>
+        <div class="muted">Designed for trinetraminesandminerals.com — Simple static site for Cloudflare Pages</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small client-side handlers (no backend). Replace with real endpoints if you have them.
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('status');
+
+      if(!name || !email || !message){ status.textContent = 'Please complete all fields.'; return false }
+
+      // Default behaviour: open user's mail client with prefilled values.
+      const subject = encodeURIComponent('Website enquiry from ' + name);
+      const body = encodeURIComponent(message + '\n\nContact email: ' + email);
+      window.location.href = 'mailto:info@trinetraminesandminerals.com?subject=' + subject + '&body=' + body;
+      status.textContent = 'Opening mail client...';
+      return false;
+    }
+    function clearForm(){ document.getElementById('contactForm').reset(); document.getElementById('status').textContent = '' }
+  </script>
+</body>
+</html>
